@@ -35,3 +35,7 @@
 *.pdb
 *.idb
 *.vcxproj
+*.sln
+*.sdf
+.vs/
+x64/
