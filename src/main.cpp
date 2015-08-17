@@ -4,6 +4,8 @@
 #include "Child3.h"
 using namespace std;
 
+void PolyEx(Parent*);
+
 int main() {
 	Parent * c1 = new Child;
 	Parent * C1 = new Child(1, 24, 'o', 23.5, "billy");
@@ -18,6 +20,14 @@ int main() {
 	C2->printFunction();
 	c3->printFunction();
 	C3->printFunction();
+
+	std::cout << "\nUSING FUNCTION!!!\n";
+	PolyEx(c1);
+	PolyEx(C1);
+	PolyEx(c2);
+	PolyEx(C2);
+	PolyEx(c3);
+	PolyEx(C3);
 	
 	std::cout << "\nUSING GENERIC FUNCTION!!!\n";
 	system("PAUSE");
@@ -37,6 +47,13 @@ int main() {
 	c3->printFunction();
 	C3->printFunction();
 
+	
+
 	system("PAUSE");
 	return 0;
+}
+
+void PolyEx(Parent *kid) {
+	cout << "This allows ANY child class of Parent to pass as an argument." << endl;
+	cout << "This is: " << kid->getName() << endl;
 }

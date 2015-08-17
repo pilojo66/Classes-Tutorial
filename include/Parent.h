@@ -21,6 +21,9 @@ public:
 			<< "A char: " << this->c << std::endl
 			<< "and a double of: " << this->d << std::endl << std::endl;
 	}
+	std::string getName(void) {
+		return this->e;
+	}
 };
 
 #endif
