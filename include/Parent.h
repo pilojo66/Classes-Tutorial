@@ -16,7 +16,7 @@ public:
 	Parent(int f, int g, char h, double i, std::string j) : a(f), b(g), c(h), d(i), e(j) {}
 	virtual void genericFunction()=0;
 	void printFunction(void) {
-		std::cout << "I'm a " << this->e << "!" << std::endl;
+		std::cout << "I'm " << this->e << "!" << std::endl;
 	}
 };
 
