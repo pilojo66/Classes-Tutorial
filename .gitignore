@@ -37,5 +37,6 @@
 *.vcxproj
 *.sln
 *.sdf
+*.filters
 .vs/
 x64/
