@@ -4,6 +4,7 @@
 
 class Child : public Parent {
 public:
+	Child() : Parent() {}
 	Child(int f, int g, char h, double i, std::string j) : Parent(f, g, h, i, j) {}
 	void genericFunction(void) {
 		e = "Child1";

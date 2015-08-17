@@ -4,8 +4,9 @@
 
 class Child3 : public Parent{
 public:
+	Child3() : Parent() {}
 	Child3(int f, int g, char h, double i, std::string j) : Parent(f, g, h, i, j){}
-	void genericFuncion(){
+	void genericFunction(){
 		a = 13;
 		b = 16;
 		c = 'B';
