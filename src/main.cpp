@@ -10,7 +10,7 @@ int main() {
 	Parent * c2 = new Child2;
 	Parent * C2 = new Child2(365, 4657, ';', 3465.23, "bob");
 	Parent * c3 = new Child3;
-	Parent * C3 = new Child3(2345, 251324, ']', 23451.1243, "fred");
+	Parent * C3 = new Child3(2345, 251324, ']', 23451.1243, "fred"); 
 
 	c1->printFunction();
 	C1->printFunction();
